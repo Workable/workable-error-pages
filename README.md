@@ -34,7 +34,7 @@ Run the development server.
   npm run dev
 ```
 
-The app should be running on localhost:3000
+The app should be running on [text](http://localhost:5173/)
 
 
 ### Starting a new feature
