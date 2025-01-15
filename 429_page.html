@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charSet="utf-8" />
+    <meta httpEquiv="Content-Type" content="text/html; charSet=utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Error 429 - Internal Server Error</title>
+    <style type="text/css">
+      /* Layout */
+      body {
+        background: #fff;
+        color: #636d77;
+        font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        line-height: 32px;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 150px);
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+        max-width: 600px;
+        margin: 0 auto 30px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .header {
+        padding: 24px 0;
+        text-align: center;
+        margin: 0 0 30px;
+      }
+
+      /* Typography */
+      h1 {
+        font-size: 40px;
+        line-height: 42px;
+        color: #00756a;
+        margin: 30px 0;
+        padding: 0;
+      }
+
+      a {
+        color: #00756a;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      .btn {
+        background-color: #00756a;
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 19px;
+        line-height: 23px;
+        font-weight: 700;
+        border-radius: 8px;
+        min-width: 187px;
+        padding: 20px;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+        display: inline-block;
+        margin: 30px 0;
+      }
+
+      .btn:hover {
+        text-decoration: none;
+        box-shadow: 0 9px 30.5px 1.5px rgba(0, 0, 0, 0.35);
+      }
+      p.disclaimer {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+
+      .cf-error-details {
+        margin: 40px 0;
+        text-align: left;
+      }
+
+      .cf-error-details h1 {
+        font-size: 18px;
+      }
+
+      .cf-error-details li {
+        margin-top: 10px;
+        line-height: 24px;
+      }
+
+      /* Responsiveness */
+      @media (max-height: 930px) {
+        .container {
+          display: block;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-cloudflare-error="429">
+    <div class="header">
+      <a href="https://www.workable.com" title="Workable homepage">
+        <img
+          src="https://workablehr-pages.s3.amazonaws.com/images/workable-logo.png"
+          width="177"
+          height="30"
+          alt="Workable logo"
+        />
+      </a>
+    </div>
+    <div class="container">
+      <img
+        src="https://workablehr-pages.s3.amazonaws.com/images/error.jpg"
+        width="449"
+        height="auto"
+        alt="error graphic"
+      />
+      <h1>Too many requests</h1>
+      <p>You’ve sent too many requests too fast.</p>
+      <p>Please try again later.</p>
+      <a href="https://www.workable.com" class="btn">Go to homepage</a>
+
+      <p class="disclaimer">
+        You can contact us at
+        <a href="mailto:support@workable.com">support@workable.com</a> if you
+        think something is wrong.<br />Make sure to include this information:
+        <br /><strong>IP:</strong> ::CLIENT_IP::<br /><strong>RAY_ID:</strong>
+        ::RAY_ID::
+      </p>
+    </div>
+  </body>
+</html>
